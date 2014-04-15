@@ -1,4 +1,5 @@
 POS-Backbone
 ============
 
-point of sales app in backbone
+Point of sales app in backbone.
+
