@@ -18,7 +18,7 @@ Here are the list of Open source frameworks and tooling I have used.
 View [Demo](http://www.khurramraja.me.uk/pointofsales/)
 
 ## Support
-For support and question please contact at [raja.khurram20@gmail.com](http://mailto:raja.khurram20@gmail.com/)  or follow at [@raja_khurram21](https://twitter.com/raja_khurram21)
+For support and question please contact at [raja.khurram20@gmail.com](mailto:raja.khurram20@gmail.com/)  or follow at [@raja_khurram21](https://twitter.com/raja_khurram21)
 
 ## Documentation
 Documentation will be coming soon along with the next phase of making card payments.
