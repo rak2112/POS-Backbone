@@ -1,0 +1,329 @@
+@media(min-width:768px) and (max-width:1199px){
+  body{
+    #wrapper{
+      img{
+        width:100%;
+      }
+    }
+  }
+  
+
+  #cv{
+    padding:100px 0; 
+    .cvWrapper{
+      padding:40px 20px;
+      .profile .content{width:100%;}
+    } 
+  } 
+}
+
+@media (min-width: 320px) and (max-width: 550px){ 
+  
+  #contact{
+    &:before{
+      left:38%;
+    }
+    .gmail{
+      margin-right:30px;
+    }
+  }
+  #cv {
+    padding:40px 7px;
+    padding-top:60px;
+    margin:0;
+    .cvWrapper{
+      padding:0;width:100%;
+      ul{
+        padding-left:10px;
+      }    
+    }
+    .profile .content{
+      width:100%;
+      p.year{width:100%;}
+    }  
+  }
+
+
+  #resources{
+    padding:40px 0;
+    article{
+      a{
+        width:auto;
+      }
+    } 
+
+    .box-shadow-preview{
+        height:100px;
+    }
+  }
+}
+
+@media(max-width:767px){
+  header .liColor{
+    top:34px;
+  } 
+  header li:hover .homefilter, header li:hover .aboutfilter, header li:hover .labfilter, header li:hover .resourcesfilter, header li:hover .contactfilter, header li:hover .cvfilter{
+    top:34px;
+    margin-top:-36px;
+    height:40px;
+  } 
+  
+
+  #intro, #recentWork .odd, #cv{
+    background-position:center;
+    background-attachment:scroll;
+    height:auto;
+  }
+
+  #aboutMe, #recentWork .even{
+    background-position:center;
+    background-attachment:scroll;
+      
+  }
+
+  #wrapper{
+      #ctaTop{
+        margin-top:6px;
+        width:100%;
+        a{display:xnone;margin:0 auto;}
+      } 
+      .nav li > a{
+        padding:10px 12px;
+        text-align:center;
+      }  
+  }
+
+  #navigation{
+    width:169px;
+    position:absolute;
+    top:2px;
+    right:0;
+    height:236px;
+    .navbar-collapse a{xborder-bottom:1px dotted $gray;}
+  }
+
+  #intro{
+    article{
+      xpadding-top:40px;
+        h1{
+        font-size:2.4em;
+      }
+      h3{
+        font-size:1.4em;
+      }
+    }
+    padding:95px 0;  
+  }
+
+  #aboutMe{
+    height:auto;
+    padding:100px 10px;
+    article{
+      .col-xs-12{
+          width:100%;
+        }
+      .logo{
+        float:left;
+
+      }
+    } 
+    .info{
+      margin-top:20px;
+      p{
+        width:100%;
+
+      }
+    }
+  }
+
+  #recentWork .app{
+    padding:20px;
+    .proImg{
+      margin-top:20px;
+    }
+    img{
+      width:75%;
+    }
+  }
+
+  #contact{
+    padding:20px 15px;
+    p{
+      text-align:left;
+    }
+    a{margin-right:18px;}
+  } 
+  #resources{
+    padding:40px 15px;
+    article > p{text-align:left;}
+  }
+
+
+
+  #header{ 
+    .logo{
+      display:block;
+      width:131px;
+      background-position:0 4px;
+    }
+    li{
+      width:100%;
+    }  
+    .navbar-collapse, .navbar-form{
+      position:relative;
+      top:18px;
+      background:$darkBlue;
+      z-index:2;
+    }
+  }
+
+  #stickyNav{ 
+    display:none;
+   .logo{
+      display:none;
+    }
+    nav{
+      width:100%;margin:0;padding:0;
+    }
+
+    .navbar-nav{
+      margin:2px -5px;
+      li{
+      width:21%;margin-left:2%;margin-right:0;height:52%;
+      }
+      li#labWork,li#resourcesNav{width:28%;}
+    } 
+    
+  } 
+  
+  .profCv .personal .pull-right{padding:20px 15px;}
+  
+  #cv{
+    .cvWrapper{
+      .interH{padding-top:0;}
+    } 
+    .profile .content{width:100%;}
+  } 
+
+  .pull-right{float:left;width:100%;}
+  
+  .year{width:100%;
+    p{margin-top:0;}
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:768px) and (max-width:1199px){
+  #cv .cvWrapper .interH{padding-top:0;}
+}
+
+@media(min-width:769px){
+  
+  .liColor{
+      position:absolute;
+      width:100%;
+      height:4px;
+      background:#8fb2fb;
+      top:66px;left:0;
+      @include transition($transition-property:all, $transition-time:300ms, $transition-method:cubic-bezier(0.425, 0, 0, 1));
+    }
+    li:hover .homefilter,li:hover .aboutfilter,li:hover .labfilter,li:hover .resourcesfilter,li:hover .contactfilter,
+    li:hover .cvfilter{
+      top:126px;
+      margin-top:-126px;
+      height:70px;
+     @include transition($transition-property:all, $transition-time:300ms, $transition-method:cubic-bezier(0.425, 0, 0, 1));
+      
+    }
+    li:hover a{z-index:2;color:#fff;}
+
+    .aboutfilter{background:#70c989}
+    .labfilter{background:#d5d81b }
+    .resourcesfilter{background:#18e9cd}
+    .contactfilter{background:#ff855c}
+    .cvfilter{background:#159ba8}
+    
+.app{
+  .btn-info{
+        width:20%;
+        height:50px;
+         @include opacity(0.0);  
+         @include transition($transition-property:all, $transition-time:300ms, $transition-method:cubic-bezier(0.425, 0, 0, 1));   
+      }    
+      .proImg{
+        @include opacity(0.7);  
+        margin:0 auto;
+        margin-top:10px;
+        width:100%;
+         @include transition($transition-property:all, $transition-time:300ms, $transition-method:cubic-bezier(0.425, 0, 0, 1)); 
+      }  
+      .content{ 
+        @include opacity(0.7); 
+        @include transition($transition-property:all, $transition-time:300ms, $transition-method:cubic-bezier(0.425, 0, 0, 1));   
+      }
+
+      &:hover{  
+          .btn-info{
+            width:100%;
+            height:50px; 
+            font-size:1.8em;
+            @include opacity(1.0);             
+          }
+          .content, .proImg{
+            @include opacity(1.0);  
+           @include transition($transition-property:all, $transition-time:300ms, $transition-method:cubic-bezier(0.425, 0, 0, 1)); 
+          }  
+        .content{
+            margin-top:60px;
+        }
+        .proImg{ 
+          margin:20px auto;
+        }
+      }
+}
+
+
+
+
+
+
+
+
+
+ .twitterBird:hover{
+    -webkit-animation: fly 0.2s steps(3) 0 infinite;
+    -moz-animation: fly 0.2s steps(3) 0 infinite;
+    animation: fly 0.2s steps(3) 0 infinite;
+  }
+  @-webkit-keyframes fly {
+  from { background-position: 0 0; }
+    to { background-position: -450px 0; }
+  }
+
+  @-moz-keyframes fly {
+    from { background-position: 0 0; }
+      to { background-position: -450px 0; }
+  }
+
+  @keyframes fly {
+    from { background-position: 0 0; }
+    to { background-position: -450px 0; }
+  }
+}

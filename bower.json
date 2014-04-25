@@ -1,0 +1,11 @@
+{
+  "name": "my-project",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": null,
+    "underscore": null,
+    "angular": "1.2"
+  },
+  "license": "MIT",
+  "private": true
+}

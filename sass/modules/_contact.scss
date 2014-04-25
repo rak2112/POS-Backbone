@@ -1,0 +1,143 @@
+#contact{
+  padding:40px;
+  background:#ededed;
+  text-align:center; 
+  position:relative;
+  $downArrow:"\f0dd";
+  .ctas{
+    padding-left:5%;
+  }
+  @include arrDown($downArrow, #e3e3e3, 55px, 55px, 30px, 0, 47%);
+  .gmail{
+    background:#272423 url('../img/profileSprite.png') no-repeat 31px -1687px;
+    display:inline-block;
+    width:100px;
+    height:100px;
+    margin-right:50px;
+    @include border-radius($radius:60px);
+    @include opacity(0.8);  
+    &:hover{ 
+      background:#cc0000 url('../img/profileSprite.png') no-repeat 31px -1687px;
+      @include opacity(1.0);
+      @include transition($transition-property:background, $transition-time:300ms, $transition-method:ease-in);
+    }
+  }
+  .twitter{
+    @extend .gmail;
+    background-position:31px -1765px; 
+    &:hover{
+      background:#7EB3CD url('../img/profileSprite.png') no-repeat 31px -1765px; 
+    }
+  }
+  .linkdn{
+    @extend .gmail;
+    background-position:31px -1843px;
+    &:hover{
+      background:#ff855c url('../img/profileSprite.png') no-repeat 31px -1843px; 
+    }
+  } 
+}
+
+#cv{
+  background: url(../img/blackBG.jpg) no-repeat center fixed;
+  @include background-size($size:cover); 
+  position:relative;
+  padding:100px 40px;
+  height:auto;
+
+  .cvWrapper{
+    background:#eaeaea;
+    padding:40px;
+    float:none;
+    overflow:hidden;
+    width:90%;
+    .interH{
+        padding-top:55px;
+        color:$red;
+    }
+    .intro{
+      text-align:center;
+      }
+  }
+
+  .introCv{
+    text-align:center;
+      span{
+        display:inline-block;width:27px;padding-right:10px;
+        text-indent:-9999px;
+        background:url(../img/profileSprite.png) no-repeat;
+      }
+      p.phone span{background-position:11px -191px;}
+      p.email span{background-position: 0 -150px;}  
+  }
+
+  .profile{   
+    display:none;
+    overflow:hidden;width:100%;
+    border-bottom:1px solid #ccc;
+    padding:inherit;
+      .content{
+        width:75%;
+          div{
+              width:100%;
+            }
+        }    
+  }
+  .year p,p.year{
+    width:100px;
+    background:#fefdfb;
+    text-align:center;
+  }
+  
+  .pProfile .profile{
+      display:block;
+  } 
+
+  .accH{
+        background:$lightBlue;margin:0;padding:5px 20px 5px;border-top:1px solid;
+        a{text-decoration:none;color:$darkBlue;display:block;padding-left:30px;
+          background:url(../img/profileSprite.png) no-repeat;}
+      }
+
+  .pProfile .accH a{
+    background-position: 0px -312px;
+  }  
+  .education .accH a{
+    background-position: 0px -353px;
+  }
+  .skillSet .accH a{
+    background-position: 0px 5px;
+  }
+  .experience .accH a{
+    background-position: 0px -404px;
+  }    
+
+}
+.profCv{
+  .interest{
+    display:inline-block;width:160px;height:20px;
+    span{
+      display:block;width:100%;height:100%;
+      background:url(../img/profileSprite.png) no-repeat 0 0;
+      padding-left:30px;
+      color:$red;
+    }
+    span.music{
+      background-position: 0 -238px;
+    }
+    span.movies{
+      background-position: 0 -78px;
+    }
+    span.technology{
+      background-position: 0 -116px;
+    }
+    span.games{
+      background-position: 0 -277px;
+    }
+  }
+  .personal{
+      .pull-right{
+        padding:20px;
+      }
+    } 
+}

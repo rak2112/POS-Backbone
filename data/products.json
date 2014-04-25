@@ -1,0 +1,191 @@
+{
+  "Products": [
+     {
+      "productid": 1,
+      "label": "evian",
+      "image": "evian.jpg",
+      "price": "90.00",
+      "inCategories": [4,2]
+
+    }, {
+      "productid": 2,
+      "label": "sprite",
+      "image": "sprite.png",
+      "price": "60.00",
+      "inCategories": [4,3]
+
+    }, {
+      "productid": 3,
+      "label": "coke lite",
+      "image": "cokelite.png",
+      "price": "60.00",
+      "inCategories": [2,4]
+
+    }, {
+      "productid": 4,
+      "label": "apple",
+      "image": "apple.png",
+      "price": "0.20",
+      "inCategories": [1,2]
+    }, {
+      "productid": 5,
+      "label": "banana",
+      "image": "bananas.png",
+      "price": "30.00",
+      "inCategories": [3,2]
+
+    }, {
+      "productid": 6,
+      "label": "oranges",
+      "image": "orange.png",
+      "price": "0.25",
+      "inCategories": [1,0]
+
+    }, {
+      "productid": 7,
+      "label": "Strawbery",
+      "image": "strawberry.png",
+      "price": "0.15",
+      "inCategories": [1,3]
+
+    },
+
+    {
+      "productid": 8,
+      "label": "carrots",
+      "image": "carrots.png",
+      "price": "8.00",
+      "inCategories": [3,2]
+    }, {
+      "productid": 9,
+      "label": "green peppers",
+      "image": "peppers.png",
+      "price": "9.00",
+      "inCategories": [1,3]
+
+    }, {
+      "productid": 10,
+      "label": "tomatoes",
+      "image": "tomato.png",
+      "price": "10.00",
+      "inCategories": [1]
+
+    }, {
+      "productid": 11,
+      "label": "onions",
+      "image": "onions.png",
+      "price": "60.00",
+      "inCategories": [1,2]
+
+    }, {
+      "productid": 12,
+      "label": "pizza",
+      "image": "pizza.png",
+      "price": "35.00",
+      "inCategories": [2]
+    }, {
+      "productid": 13,
+      "label": "lays",
+      "image": "lays.png",
+      "price": "40.00",
+      "inCategories": [1,3]
+
+    }, {
+      "productid": 14,
+      "label": "ice cream",
+      "image": "icecream.png",
+      "price": "20.00",
+      "inCategories": [3,2]
+
+    }, {
+      "productid": 15,
+      "label": "chips",
+      "image": "chips.jpeg",
+      "price": "90.00",
+      "inCategories": [3]
+
+    },{
+      "productid": 16,
+      "label": "coke",
+      "image": "coke.png",
+      "price": "60.00",
+      "inCategories": [3,4]
+
+    },{
+      "productid": 17,
+      "label": "coke 2.0L",
+      "image": "coke2L.jpg",
+      "price": "190.00",
+      "inCategories": [3,4]
+    },{
+      "productid": 18,
+      "label": "Pear",
+      "image": "pear.png",
+      "price": "190.00",
+      "inCategories": [3,1]
+    },{
+      "productid": 19,
+      "label": "cherry",
+      "image": "cherry.png",
+      "price": "190.00",
+      "inCategories": [3,1]
+    },{
+      "productid": 20,
+      "label": "potatoes",
+      "image": "potatoes.png",
+      "price": "190.00",
+      "inCategories": [3,2]
+    },{
+      "productid": 21,
+      "label": "peas",
+      "image": "peas.jpg",
+      "price": "190.00",
+      "inCategories": [3,2]
+    },{
+      "productid": 22,
+      "label": "Cucumber",
+      "image": "cucumber.png",
+      "price": "190.00",
+      "inCategories": [2,1]
+    },{
+      "productid": 23,
+      "label": "lemon",
+      "image": "lemon.png",
+      "price": "190.00",
+      "inCategories": [2,1]
+    },{
+      "productid": 24,
+      "label": "brocolli",
+      "image": "broccoli.png",
+      "price": "190.00",
+      "inCategories": [2]
+    },{
+      "productid": 25,
+      "label": "cabbage",
+      "image": "cabbage.png",
+      "price": "190.00",
+      "inCategories": [2,1]
+    },{
+      "productid": 26,
+      "label": "cauliflower",
+      "image": "cauliflower.png",
+      "price": "190.00",
+      "inCategories": [3,2]
+    },{
+      "productid": 27,
+      "label": "grapes",
+      "image": "grapes.png",
+      "price": "190.00",
+      "inCategories": [1]
+    },{
+      "productid": 28,
+      "label": "Mangoes",
+      "image": "mango.png",
+      "price": "190.00",
+      "inCategories": [3,1]
+    }
+
+
+
+  ]
+}

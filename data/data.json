@@ -1,0 +1,21 @@
+{
+  "categories": [
+    
+    { "categoryid": 1,
+      "label": "Fruits",
+      "image": "fruits.png"
+    },
+    { "categoryid": 2,
+      "label": "Vegetables",
+      "image": "vegetables.png"
+    },
+    { "categoryid": 3,
+      "label": "Food",
+      "image": "food.png"
+    },{
+      "categoryid": 4,
+      "label": "Beverges",
+      "image": "beverages.png"
+    }
+  ]
+}

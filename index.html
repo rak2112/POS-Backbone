@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>POS - Point of Sales in Backbone</title>
+  <meta name="description" content="Point of Sales in Backbone">
+  <meta name="author" content="Khurram Raja">
+  <link rel="shortcut icon" href="../img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="main" class='container'>
+	<h1>Point Of Sales App (Backbone)</h1>
+    <div class="row-fluid">
+    <div class="prods span8"></div>
+
+    <div class="checkOut span4">
+    	<div class='cart'>
+    		<h2>Your Cart</h2>
+        <div class="itemList">
+        </div> 
+      </div>
+
+      <div class="cartTotals">
+       <span class="totalPrice pull-right"></span>
+      </div>
+
+      <div class='keyPad'>
+      	
+      	<div class="quantity">
+        <p>Select the Quantity using keypad:</p>
+	        <ul class='keyPads pull-left'>
+	          <li class='symbol' data-val='1'>1</li>
+	          <li class='symbol' data-val='2'>2</li>
+	          <li class='symbol' data-val='3'>3</li>
+	          <li class='symbol' data-val='4'>4</li>
+	          <li class='symbol' data-val='5'>5</li>
+	          <li class='symbol' data-val='6'>6</li>
+	          <li class='symbol' data-val='7'>7</li>
+	          <li class='symbol' data-val='8'>8</li>
+	          <li class='symbol' data-val='9'>9</li>
+	          <li class='symbol' data-val='0'>0</li>
+	          <li class='symbol cancel' data-val='-1'>cancel</li>					
+	        </ul>
+        </div>
+        <a id='payNow' class=' symbol' href="#">Pay by Cash</a>
+      </div>
+    </div>
+ 
+  
+   
+
+</div>
+</div>
+
+
+
+<script id='prods-template' type='text/html'>
+<div class='catg-list'>
+<div class='row-fluid'>
+  <a id='home' href="#" class="btn btn-info"><i class="icon-white icon-home"></i> Home</a>
+   <ul id='items' class='thumbnails unstyled'>
+   <% _.each(categories, function(item, i) { %>
+      <li class='span3 plan' data-id="<%=item.categoryid%>">
+      <div class="plan-name-bronze">
+            <img src = "images/<%= item.image %>"/>
+            <h2><%= item.label %></h2>
+          </div>
+          <ul>
+            
+            <li class="plan-feature"><a href="#" class="btn btn-primary btn-plan-select"><i class="icon-white icon-ok"></i> Select</a></li>
+          </ul>
+      </li>
+      <% }); %>
+   </ul>
+   </div>
+   </div>
+  </script>
+
+  <script type="text/html" id="subCat-template">
+     <div class='prod-list'>
+      <ul id='subCat' class='thumbnails unstyled'>
+       {{#each products}}
+        <li id="{{productid}}" class='span2 cat plan'>
+
+
+      <div class="plan-name-bronze">
+            <p>{{label}}</p>
+            <img src = "images/{{image}}"/>
+            <p>£{{price}}</p>
+          </div>
+  
+     </li>
+        {{/each}}
+      </ul>
+      </div>
+ </script>
+
+ <script type="text/html" id="cart-template">
+      <ul class='unstyled cartList'>
+       {{#each cart}}
+        <li id="{{productid}}">
+         <strong>{{label}}</strong> <br/>
+          <span class="price pull-left"><strong>£{{unit}}</strong> Unit(s) at £{{price}} / Unit(s) </span>
+            <span class='pull-right'><strong>£{{unitPriceTotal}}</strong>
+            <a id='delete' class="btn btn-danger btn-mini" href='#' title='Remove item'><i class="icon-white icon-trash"></i></a>
+            </span>
+             
+            </li>
+            
+        {{/each}}
+      </ul>
+ </script>
+
+ <script type="text/html" id="template-checkOut">
+       <div id="checkOutView" class='span8'>
+       <h2>Payment</h2>
+      <p>Total Amount to Pay<span id='totalAmount' class='pull-right'></span></p>
+     <p id='txtEnabled'>Cash Journal    <input id='amountPaid' type="text"></p>
+      <p>Paid :<span id='paid' class='pull-right'> </span></p>
+      <p>Remaining to Pay :<span id='remaining' class='pull-right'></span></p>
+      <p>Change Due:<span id='change' class='pull-right'></span></p>
+      <a href="#" id="homeRoute">Go to Home</a>
+      </div>
+ </script>
+ 
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/underscore.js"></script>
+  <script src="js/vendor/backbone.js"></script>
+  <script src="js/vendor/handlebars.js"></script>
+  <script src="js/vendor/jquery.xml2json.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/views/baseView.js"></script>
+  <script src="js/collections/categories.js"></script>
+  <script src="js/routes/router.js"></script>
+  <script src="js/collections/products.js"></script>
+  <script src="js/collections/cart.js"></script>
+  <script src="js/views/checkOutView.js"></script>
+<script>
+    window.onload = init;
+      function init(){
+        App.init();
+      }
+</script>
+
+</body>
+</html>
