@@ -1,3 +1,4 @@
-node-modules
+#git ignore
+node_modules
 .sass-cache
 sass
