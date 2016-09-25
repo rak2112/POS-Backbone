@@ -116,7 +116,6 @@ module.exports = function(grunt) {
 		'concat:js',
 		'uglify:js',
 		'jshint',
-		'less',
 		'watch',
 		'imagemin',
 		'sass',
