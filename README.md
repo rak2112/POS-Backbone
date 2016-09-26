@@ -5,7 +5,7 @@ POS-Backbone is an SPA. It allows users to select products ranging from differet
 
 Here are the list of Open source frameworks and tooling I have used.
 
-
+- Javascript
 - Backbone
 - Underscore
 - JQuery
